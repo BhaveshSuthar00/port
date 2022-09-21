@@ -105,15 +105,13 @@ input:focus, textarea:focus, select:focus{
     color:  rgb(173, 173, 173) !important;
 }
 @media (max-width: 600px) {
-    * {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
     :root{
         --widthfor : 90%;
     }
     .contact {
-        font-size: 1.6rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        font-size: 1.1rem;
     }
     .form_form {
         flex-flow: column;
@@ -142,7 +140,7 @@ input:focus, textarea:focus, select:focus{
     }
     .submit {
         margin-top: 5%;
-        width : 40% !important;
+        width : 80% !important;
         border-radius: var(--borderRadius);
     }
 }

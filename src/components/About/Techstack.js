@@ -3,67 +3,31 @@ import './Techstack.css'
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiRedux,
-  SiHtml5,
-  SiMaterialui,
-  SiExpress,
-  SiRedis
+  SiRedis,
+  SiNestjs,
+  SiTypescript,
+  SiJavascript, 
+  SiChakraui,
+  SiMysql
 } from "react-icons/si";
-import { DiCss3, DiMongodb } from "react-icons/di";
-import { SiJavascript, SiChakraui } from "react-icons/si";
-import { VscGithub } from "react-icons/vsc";
-
+import { DiCss3, DiHtml5, DiMongodb } from "react-icons/di";
+import { Single } from "./Single";
 function Techstack() {
   return (
     <>
       <div className="techstack">
-          <div data-aos='flip-down'>
-            <SiJavascript />
-            <h5 style={{marginTop: 10}}>Javascript</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <SiHtml5 />
-            <h5 style={{marginTop: 10}}>HTML</h5>
-          </div>
-          <div data-aos='flip-down'> 
-            <DiCss3 />
-            <h5 style={{marginTop: 10}}>CSS</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <FaReact />
-            <h5 style={{marginTop: 10}}>React</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <FaNodeJs />
-            <h5 style={{marginTop: 10}}>Nodejs</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <DiMongodb />
-            <h5 style={{marginTop: 10}}>MongoDb</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <SiRedux />
-            <h5 style={{marginTop: 10}}>Redux</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <SiExpress />
-            <h5 style={{marginTop: 10}}>Express</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <SiRedis />
-            <h5 style={{marginTop: 10}}>Redis</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <SiChakraui />
-            <h5 style={{marginTop: 10}}> Chakra Ui</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <SiMaterialui />
-            <h5 style={{marginTop: 10}}>Material Ui</h5>
-          </div>
-          <div data-aos='flip-down'>
-            <VscGithub />
-            <h5 style={{marginTop: 10}}>Github</h5>
-          </div>
+          <Single name={'CSS'} icon={<DiCss3 />} />
+          <Single name={'Chakra Ui'} icon={<SiChakraui />} />
+          <Single name={'HTML'} icon={<DiHtml5 />} />
+          <Single name={'JavaScript'} icon={<SiJavascript />} />
+          <Single name={'MySql'} icon={<SiMysql />} />
+          <Single name={'MongoDb'} icon={<DiMongodb />} />
+          <Single name={'Nest Js'} icon={<SiNestjs />} />
+          <Single name={'Node Js'} icon={<FaNodeJs />} />
+          <Single name={'React'} icon={<FaReact />} />
+          <Single name={'Redux'} icon={<SiRedux />} />
+          <Single name={'Redis'} icon={<SiRedis />} />
+          <Single name={'TypeScript'} icon={<SiTypescript />} />
       </div>
     </>
     );

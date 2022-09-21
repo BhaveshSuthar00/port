@@ -6,7 +6,7 @@ import AddedCont from './AddedCont';
 import { RiSendPlaneLine } from "react-icons/ri";
 const Result = ()=>{
   return (
-      <p>Your message has been successfully send. I will contact you soon.</p>
+      <p style={{fontSize:"13px"}}>Your message has been successfully send. I will contact you soon.</p>
   )
 }
 export const Contact = () => {
@@ -29,7 +29,7 @@ export const Contact = () => {
     <>
     <section className="contact" id="contact" style={{zIndex : 100,position : 'relative'}}>
       <div id='now'>
-        Contact me with E-mail 😄
+        Contact me with E-mail <span role='img' aria-label='emoji'>😄</span> 
       </div>
           <div className="form_div">
         <form onSubmit={sendEmail} className="form_form" >

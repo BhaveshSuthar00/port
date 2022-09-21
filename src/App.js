@@ -27,7 +27,6 @@ function App() {
     AOS.init({
       duration : 1000,
       offset: 210,
-      // once: 'false',
       mirror: true,
       disable: function() {
         var maxWidth = 800;
@@ -38,17 +37,13 @@ function App() {
   return (
     <Router>
       <ParticlesOut />
-      <div>
         <Preloader load={load} />
-      </div>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <div>
           <Navbar />
-        </div>
-        <div>< Home /></div>
-        <div>< About /></div>
-        <div>< Projects /> </div>
-        <div>< Contact /></div>
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
         <div style={{position: 'fixed', zIndex: 1000, bottom : "20px", right : '20px',  width : "50px", height : "50px"}}>
           <ScrollToTop />
         </div>
