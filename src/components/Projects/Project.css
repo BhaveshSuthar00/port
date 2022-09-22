@@ -13,6 +13,7 @@
 }
 .different {
     color: white;
+    cursor: pointer;
     display : inline-block;
     font-family:  'Lobster Two', cursive;
     margin: auto;
@@ -133,12 +134,12 @@
     background-color: rgb(35, 35, 35, 0.5) !important;
     color:  white !important;
 }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .project {
       flex-direction: column;
     }
     .projects_container {
-      margin-top: 10%;
+      margin-top: 3%;
     }
     .project_videocontainer {
       flex-basis: 40%;
@@ -147,7 +148,7 @@
       flex-basis: 60%;
     }
     .project_information > div:nth-child(3) > svg {
-      font-size: 2em;
+      font-size: 3em;
     }
   }
   

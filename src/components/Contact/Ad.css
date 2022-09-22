@@ -17,15 +17,12 @@ body {
 }
 .add_contact_div{
     display: flex;
-    width: 50%;
+    width: 80%;
     margin: auto;
     justify-content: space-between;
 }
-@media (max-width: 600px) {
-    .add_contact_div {
-        width: 80%;
-    }
-    :root {
-        --fontSizeAd : 0.8rem;
+@media (max-width: 900px) {
+    .add_contact {
+        display: none;
     }
 }

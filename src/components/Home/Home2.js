@@ -21,7 +21,7 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              something, I think… <span role='img' aria-label="emoji">🤷‍♂️</span>
               <br />
               <br />I am fluent in classic like
               <i>
@@ -68,7 +68,7 @@ function Home2() {
                 <a
                   href="https://github.com/BhaveshSuthar00"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
@@ -78,7 +78,7 @@ function Home2() {
                 <a
                   href="https://www.google.com/maps/place/Dahisar+East,+Mumbai,+Maharashtra/@19.2545196,72.8439397,14z/data=!4m9!1m2!10m1!1e2!3m5!1s0x3be7b0eef33fcc13:0xdf8f3b35a262c586!8m2!3d19.2574665!4d72.8650191!16s%2Fg%2F12hw1vgkw"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <GiWorld />
@@ -88,7 +88,7 @@ function Home2() {
                 <a
                   href="https://www.linkedin.com/in/bhaveshsuthar0770"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
@@ -97,7 +97,7 @@ function Home2() {
               <li className="social-icons">
                 <Link
                   smooth to="#contact"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour home-social-icons"
                 >
                   <AiOutlineMail />

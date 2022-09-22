@@ -104,7 +104,7 @@ function NavBar() {
               <Nav.Link
                 onClick={() => {
                   updateExpanded(false)
-                  window.open("https://drive.google.com/file/d/13DAb-75c_feWolJb9UJpP7AVoIS6L47I/view?usp=sharing", "_blank")
+                  window.open("https://drive.google.com/file/d/1KeSIpwTMW9g24womoECOOm5GFzd3pB8p/view?usp=sharing", "_blank")
                 }}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
