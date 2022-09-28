@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import Resume from '.././Assets/resume.pdf';
 import { HashLink as Link } from 'react-router-hash-link';
 import {
   AiOutlineHome,
@@ -101,12 +102,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
+              {/* <Nav.Link
                 onClick={() => {
                   updateExpanded(false)
                   window.open("https://drive.google.com/file/d/1KeSIpwTMW9g24womoECOOm5GFzd3pB8p/view?usp=sharing", "_blank")
                 }}
-              >
+                >
+                <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
+                Resume
+              </Nav.Link> */}
+              <Nav.Link href={Resume} download>
                 <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
                 Resume
               </Nav.Link>
