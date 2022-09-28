@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { v4 as uuid } from 'uuid';
 export const Single = ({props}) => {
     return (
     <>
@@ -24,7 +24,7 @@ export const Single = ({props}) => {
               </p>
               </div>
               <div>
-                {props.icons.map((item)=> item)}
+                {props.icons.map((item)=> <i key={uuid()} className={'icons-array'}>{item}</i>)}
               </div>
               <div>
                 <a

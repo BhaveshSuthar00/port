@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.css";
 import { Single } from "./Single";
 import { holeThing } from "../../constants/containts";
-
+import { v4 as uuid } from 'uuid'
 export const Projects = () => {
   return (
     <>
@@ -10,7 +10,7 @@ export const Projects = () => {
         &lt; &nbsp; <strong>Projects</strong> &nbsp; &frasl; &gt;
       </h2>
       <div className="section" id="project">
-        {holeThing.map((item)=> <Single key={item.headers} props={item} />)}
+        {holeThing.map((item)=> <Single key={uuid()} props={item} />)}
       </div>
     </>
   );
