@@ -102,19 +102,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              {/* <Nav.Link
+              <Nav.Link
                 onClick={() => {
                   updateExpanded(false)
-                  window.open("https://drive.google.com/file/d/1KeSIpwTMW9g24womoECOOm5GFzd3pB8p/view?usp=sharing", "_blank")
+                  window.open("https://drive.google.com/file/d/1KeSIpwTMW9g24womoECOOm5GFzd3pB8p/view?usp=share_link", "_blank")
                 }}
                 >
                 <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
                 Resume
-              </Nav.Link> */}
-              <Nav.Link href={Resume} download>
+              </Nav.Link>
+              {/* <Nav.Link href={Resume} download>
                 <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
                 Resume
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
